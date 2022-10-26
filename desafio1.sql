@@ -24,19 +24,19 @@ DROP DATABASE IF EXISTS SpotifyClone;
        FOREIGN KEY (plano_id) REFERENCES plano(plano_id)
   ) engine = InnoDB;
   
-   INSERT INTO SpotifyClone.usuario (usuario, idade)
+   INSERT INTO SpotifyClone.usuario (usuario, idade, data_assinatura)
   VALUES
-    ('Barbara Liskov', 82),
-    ('Robert Cecil Martin',	58),
-	('Ada Lovelace', 37),
-	('Martin Fowler', 46),
-	('Sandi Metz', 58),
-	('Paulo Freire', 19),
-	('Bell Hooks', 26),
-	('Christopher Alexander', 85),
-	('Judith Butler', 45),
-	('Jorge Amado', 58);
-  
+    ('Barbara Liskov', 82, '2019-10-20'),
+    ('Robert Cecil Martin',	58, '2017-01-06'),
+	('Ada Lovelace', 37, '2017-12-30'),
+	('Martin Fowler', 46, '2017-01-17'),
+	('Sandi Metz', 58, '2018-04-29'),
+	('Paulo Freire', 19, '2018-02-14'),
+	('Bell Hooks', 26, '2018-01-05'),
+	('Christopher Alexander', 85, '2019-06-05'),
+	('Judith Butler', 45, '2020-05-13'),
+	('Jorge Amado', 58, '2017-02-17');
+
       CREATE TABLE SpotifyClone.artista(
       artista_id INT AUTO_INCREMENT PRIMARY KEY,
       artista VARCHAR(20)
