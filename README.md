@@ -1,54 +1,48 @@
-<p>
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Ludson96/project-mysql-one-for-all?color=6E40C9&style=flat-square">
-  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/Ludson96/project-mysql-one-for-all?color=6E40C9&style=flat-square">
-  <a href="https://github.com/Ludson96/project-mysql-one-for-all/commits/main">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Ludson96/project-mysql-one-for-all?color=6E40C9&style=flat-square">
-  </a>
-</p>
+# Repositório do projeto One For All
+ ## Módulo: BACK-END
+ 
+ Repositório possuí projeto desenvolvido no período que estive na <b>Trybe</b>, abordando os conceitos de <b>SQL</b> e seus comandos.
+  ## Informações de aprendizados
 
-# Boas vindas ao repositório do projeto One For All
+  - Este é um projeto desenvolvido para me ajudar a aprender `Normalização`;
+  - Primeiro projeto utilizando `Normalização`;
+  - Utilizei o `MySQL Workbench` para visualização das tabelas.
+  ## Habilidades
+  
+  - Modelar um banco de dados
+  - Identificar entidades, atributos e relacionamentos
+  - Aplicar a 1ª, 2ª e 3ª Forma Normal
+  - Criar tabelas
+  ## Linguagem usadas
 
-<div align="center">
-  <img height="150px" align="right" src="https://theme.zdassets.com/theme_assets/9633455/9814df697eaf49815d7df109110815ff887b3457.png" />
-  <div align="left" style="display: inline_block">
-    <h2>Módulo: DESENVOLVIMENTO BACK-END</h2>
-    <p>
-      Repositório possuí projeto desenvolvido no período que estive na <b>Trybe</b>, abordando os conceitos de <b>SQL</b> e seus comandos.
-  </div>
-  <br>
-</div>
+[![Docker][Docker-logo]][Docker-url]
+[![MySQL][MySQL-logo]][MySQL-url]
 
-## Habilidades
+  ## O que foi desenvolvido
 
-- Modelar um banco de dados
-- Identificar entidades, atributos e relacionamentos
-- Aplicar a 1ª, 2ª e 3ª Forma Normal
-- Criar tabelas
+  Um projeto com o codinome One For All em que teve pratica, á uma tabela para revisar e consolidar todos os principais conceitos vistos até o momento.
 
-## O que foi desenvolvido
-
-Um projeto com o codinome One For All em que teve pratica, á uma tabela para revisar e consolidar todos os principais conceitos vistos até o momento.
-
-Essa tabela não normalizada, foi normalizada e populada,onde foi executado queries sobre ela com o intuito de encontrar as informações solicitadas.
+  Essa tabela não normalizada, foi normalizada e populada,onde foi executado queries sobre ela com o intuito de encontrar as informações solicitadas.
 
 ---
+  ## Instruções para instalar e rodar
 
-## Instruções para instalar e rodar os testes de cada requisito
-
-```bash
-# Clone o repositório
-  git clone git@github.com:Ludson96/project-mysql-one-for-all.git
-# Entre na pasta do repositório que você acabou de clonar:
-  cd mysql-one-for-all
-# Instale as dependências e inicialize o projeto
+  1. Clone o repo:
+  ```
+  git clone git@github.com:Ludson96/project-mysql-all-for-one.git
+  ```
+  2. Instale as suas dependências:
+  ```
   npm install
-# Entre no Vs Code para verificar os arquivos usando o atalho no terminal:
-  code .
-#  A pasta tests contém os testes que verifica se os comandos estão atendendo o que foi pedido
-# Leia os Requisitos do Projeto logo abaixo explicando o que cada requisito propõem
-# Para rodar os tests use o atalho no terminal:
-  npm run test
-```
+  ```
+  3. Já tem um arquivo `docker-compose.yml` criado. Para executar o container, utilize o seguinte comando (sendo a flag -d para executar em segundo plano):
+  ```
+  docker-compose up -d
+  ```
+  4. Os arquivos com `desafioN.sql`, sendo N o número do requisito. Copie e cole para testar o comando e verificar o que retornar segundo os requisitos abaixo. Recomendo utilizar uma ferramenta de design de banco de dados visual, eu utilizei o [MySQL Workbench]
+
+  > planilha de tabelas _SpotifyClone-Non-NormalizedTable.xlsx_ fornecido pela Trybe.
+
 
 ## Requisitos do projeto
 
@@ -175,10 +169,6 @@ Crie uma `QUERY` que deverá ter apenas três colunas:
 3. A terceira coluna deve possuir o alias "**total_minutos**" e exibir a soma dos minutos ouvidos pela pessoa usuária com base no seu histórico de reprodução.
 
 Os resultados devem estar agrupados pelo nome da pessoa usuária e ordenados em ordem alfabética.
-
-Sua `QUERY` deve retornar a seguinte informação:
-
-![Histórico de reprodução das pessoas usuárias](./images/HistoricoReproducaoUsuarios.png)
 
 O que será verificado:
 
@@ -375,3 +365,12 @@ O que será verificado:
 - Será validado se as colunas estão ordenadas de forma correta.
 
 </details>
+
+---
+> planilha de tabelas `_SpotifyClone-Non-NormalizedTable.xlsx_` e `docker-compose.yml` fornecido pela Trybe.
+
+[Docker-logo]: https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
+[Docker-url]: https://www.docker.com
+[MySQL-logo]: https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white
+[MySQL-url]: https://www.mysql.com
+[MySQL Workbench]: https://dev.mysql.com/downloads/workbench/
