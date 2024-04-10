@@ -20,7 +20,7 @@
 
   ## O que foi desenvolvido
 
-  Um projeto com o codinome One For All em que teve pratica, á uma tabela para revisar e consolidar todos os principais conceitos vistos até o momento.
+  Um projeto com o codinome One For All em que teve pratica de normalização de uma tabela para revisar e consolidar todos os principais conceitos vistos até o momento.
 
   Essa tabela não normalizada, foi normalizada e populada,onde foi executado queries sobre ela com o intuito de encontrar as informações solicitadas.
 
